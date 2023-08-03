@@ -45,7 +45,7 @@ function movePipes(bird) {
   lines.forEach(function (item) {
     item.x -= player.speed;
     item.style.left = item.x + "px";
-    if (item.x < 0) {
+    if (item.x < -100) {
       item.parentElement.removeChild(item);
       counter++;
     }
