@@ -30,7 +30,7 @@ function start() {
   player.y = bird.offsetTop;
 
   player.pipe = 0;
-  let spacing = 400;
+  let spacing = 300;
   let howMany = Math.floor(gameArea.offsetWidth / spacing);
   for (let i = 0; i < howMany; i++) {
     buildPipes(player.pipe * spacing);
